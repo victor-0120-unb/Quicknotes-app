@@ -1,0 +1,84 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>QuickNotes</title>
+
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+
+  <header>
+    <h1>QuickNotes</h1>
+    <p>Capture your thoughts quickly and keep them organized.</p>
+  </header>
+
+  <main>
+
+    <section class="card">
+      <h2>Add a note</h2>
+
+      <form id="note-form">
+
+        <div class="form-group">
+          <label for="note-input">Note</label>
+          <input
+            type="text"
+            id="note-input"
+            placeholder="Type your note..."
+          >
+        </div>
+
+        <div class="form-group">
+          <label for="category-select">Category</label>
+
+          <select id="category-select">
+            <option value="Personal">Personal</option>
+            <option value="Work">Work</option>
+            <option value="Study">Study</option>
+          </select>
+        </div>
+
+        <button type="submit">Add Note</button>
+
+      </form>
+
+      <p id="error-message"></p>
+    </section>
+
+
+    <section class="card">
+      <h2>Your notes</h2>
+
+      <div class="search-container">
+        <label for="search-input">Search notes</label>
+
+        <input
+          type="search"
+          id="search-input"
+          placeholder="Search your notes..."
+        >
+      </div>
+
+      <p id="note-count">You have no notes yet.</p>
+
+      <ul id="notes-list"></ul>
+
+      <button id="clear-all-btn" type="button">Clear all</button>
+    </section>
+
+  </main>
+
+
+  <footer>
+    <p>&copy; 2026 QuickNotes</p>
+  </footer>
+
+</body>
+</html>
+```

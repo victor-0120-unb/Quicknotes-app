@@ -1,0 +1,197 @@
+```css
+/* Basic reset */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f2f4f7;
+  color: #222;
+  line-height: 1.6;
+}
+
+/* Header */
+header {
+  background-color: #2563eb;
+  color: white;
+  text-align: center;
+  padding: 30px 20px;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.2rem;
+}
+
+header p {
+  margin: 5px 0 0;
+}
+
+/* Main container */
+main {
+  max-width: 700px;
+  margin: 30px auto;
+  padding: 0 15px;
+}
+
+/* Section cards */
+.card {
+  background-color: white;
+  border-radius: 10px;
+  padding: 25px;
+  margin-bottom: 25px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.card h2 {
+  margin-top: 0;
+}
+
+/* Form */
+#note-form {
+  display: flex;
+  align-items: end;
+  gap: 12px;
+}
+
+.form-group {
+  flex: 1;
+}
+
+.form-group label,
+.search-container label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #bbb;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+button {
+  border: none;
+  border-radius: 6px;
+  padding: 10px 16px;
+  background-color: #2563eb;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #1d4ed8;
+}
+
+/* Error message */
+#error-message {
+  color: #dc2626;
+  font-weight: bold;
+  min-height: 24px;
+  margin-bottom: 0;
+}
+
+/* Search */
+.search-container {
+  margin-bottom: 15px;
+}
+
+/* Notes */
+#notes-list {
+  list-style: none;
+  padding: 0;
+  margin: 15px 0;
+}
+
+.note-card {
+  background-color: #f8fafc;
+  border: 1px solid #ddd;
+  border-left-width: 6px;
+  border-radius: 6px;
+  padding: 15px;
+  margin-bottom: 12px;
+}
+
+.note-text {
+  margin: 0 0 8px;
+  font-weight: 500;
+}
+
+.note-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.85rem;
+  color: #666;
+}
+
+.category-label {
+  display: inline-block;
+  font-weight: bold;
+}
+
+/* Category colours */
+.category-personal {
+  border-left-color: teal;
+}
+
+.category-work {
+  border-left-color: darkred;
+}
+
+.category-study {
+  border-left-color: blue;
+}
+
+/* Delete button */
+.delete-btn {
+  background-color: #dc2626;
+  padding: 6px 10px;
+  font-size: 0.85rem;
+}
+
+.delete-btn:hover {
+  background-color: #b91c1c;
+}
+
+/* Clear all button */
+#clear-all-btn {
+  background-color: #555;
+}
+
+#clear-all-btn:hover {
+  background-color: #333;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  color: #666;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+  #note-form {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  #note-form button {
+    width: 100%;
+  }
+
+  .note-meta {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+```
